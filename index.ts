@@ -14,7 +14,7 @@ EventsSDK.on("Draw", () => {
 	}
 
 	// Check if hero is visible by enemies
-	if (myHero.IsVisible) {
+	if (myHero.IsVisibleForEnemies_) {
 		// Draw warning text on screen
 		console.log("Visible by enemies!")
 		// myHero.DrawText(TEXT_POSITION, VISIBLE_TEXT, TEXT_COLOR)
