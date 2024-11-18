@@ -4,3 +4,6 @@ console.log("Hello world!")
 EventsSDK.on("GameStarted", () => {
 	console.log("Hello world!")
 })
+EventsSDK.on("EntityVisibleChanged", () => {
+	console.log("Hello world! Visible")
+})
