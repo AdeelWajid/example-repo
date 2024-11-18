@@ -1,7 +1,7 @@
-import { Color } from "github.com/octarine-public/wrapper/dist/Base/Color"
-import { EventsSDK } from "github.com/octarine-public/wrapper/index"
-import { LocalPlayer } from "github.com/octarine-public/wrapper/Objects/Base/Entity"
-import { Vector2 } from "github.com/octarine-public/wrapper/Utils/Vector2"
+import { Color } from "../../octarine-public/wrapper/wrapper/Base/Color"
+import { EventsSDK } from "../../octarine-public/wrapper/index"
+import { LocalPlayer } from "../../octarine-public/wrapper/wrapper/Objects/Base/Entity"
+import { Vector2 } from "../../octarine-public/wrapper/wrapper/Base/Vector2"
 
 const VISIBLE_TEXT = "VISIBLE BY ENEMY!"
 const TEXT_COLOR = new Color(255, 0, 0, 255) // Red color
@@ -14,8 +14,8 @@ EventsSDK.on("Draw", () => {
 	}
 
 	// Check if hero is visible by enemies
-	if (myHero.IsVisibleByEnemies) {
+	if (myHero.IsVisible) {
 		// Draw warning text on screen
-		myHero.DrawText(TEXT_POSITION, VISIBLE_TEXT, TEXT_COLOR)
+		console.log("Hero is visible by enemies!")
 	}
 })
