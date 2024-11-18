@@ -1,10 +1,10 @@
-import { Color } from "../../octarine-public/wrapper/wrapper/Base/Color"
 import { EventsSDK } from "../../octarine-public/wrapper/index"
+import { Color } from "../../octarine-public/wrapper/wrapper/Base/Color"
 import { LocalPlayer } from "../../octarine-public/wrapper/wrapper/Objects/Base/Entity"
 import { Vector2 } from "../../octarine-public/wrapper/wrapper/Base/Vector2"
 
 const VISIBLE_TEXT = "VISIBLE BY ENEMY!"
-const TEXT_COLOR = new Color(255, 0, 0, 255) // Red color
+const TEXT_COLOR = Color.Red // Red color
 const TEXT_POSITION = new Vector2(400, 100) // Position on screen
 
 EventsSDK.on("Draw", () => {
