@@ -23,6 +23,14 @@
 		"check-circular": "npx madge --circular index.ts",
 		"lint": "eslint -c .eslintrc.json --ext .ts --fix ."
 	},
+	"contributors": [
+		"moofMonkey",
+		"I_GRIN_I",
+		"SicdeX-",
+		"LalkaKaro4",
+		"Bulb4",
+		"0h"
+	],
 	"license": "GPL-3.0-or-later",
 	"repository": {
 		"type": "git",
