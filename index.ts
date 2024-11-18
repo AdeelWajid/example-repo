@@ -7,15 +7,10 @@ let toggleButton: any
 
 // Create main menu
 EventsSDK.on("GameStarted", () => {
-	if (!MenuManager) {
-		return
-	}
 	
 	
 })
 
-const VISIBLE_TEXT = "VISIBLE BY ENEMY!"
-const TEXT_POSITION = new Vector2(400, 100)
 
 EventsSDK.on("Draw", () => {
 	const myHero = LocalPlayer?.Hero
@@ -27,6 +22,7 @@ EventsSDK.on("Draw", () => {
 	if (myHero.IsVisibleForEnemies_) {
 		console.log("Visible by enemies!")
 	}
+	
 	if(MenuManager.IsOpen){
 		const mainMenu = MenuManager.AddEntry("Kill Steal Script")
 	toggleButton = mainMenu.AddToggle("Enable Kill Steal", false, "K")
